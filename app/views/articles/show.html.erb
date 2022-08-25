@@ -8,4 +8,10 @@
                     turbo_method: :delete,
                     turbo_confirm: "Are you sure?"
                   } %></li>
+  <li><%= link_to "Back", articles_path(@articles) %></li>
 </ul>
+<h2>Comments</h2>
+<%= render @article.comments %>
+
+<h2>Add a comment:</h2>
+<%= render 'comments/form' %>
