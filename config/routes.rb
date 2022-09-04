@@ -12,7 +12,8 @@ Rails.application.routes.draw do
   end
 
   resources :articles do
-    get 'user/:user_id', to: 'articles#from_author', on: :collection
+  get 'user/:user_id', to: 'articles#from_author', on: :collection
+
     resources :comments
   end
 
@@ -23,4 +24,5 @@ Rails.application.routes.draw do
   end
   get '/articles', to: 'static_pages#home'
   resources :relationships,       only: [:create, :destroy]
+  
 end
