@@ -5,7 +5,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 gem 'rails', '~> 7.0.3', '>= 7.0.3.1'
 
 gem 'devise'
-ruby '3.1.2'
+ruby '3.0.2'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
@@ -28,7 +28,7 @@ gem 'stimulus-rails'
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem 'jbuilder'
-
+gem 'webpacker'
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
@@ -46,8 +46,8 @@ gem 'bootsnap', require: false
 # Bootstrap 5
 gem 'bootstrap'
 # Use Sass to process CSS
+gem 'faker'
 gem 'sassc-rails'
-
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
