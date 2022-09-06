@@ -10,7 +10,6 @@
 # Ignore the default SQLite database.
 /db/*.pg
 /db/*.pg-*
-/db/seeds.rb
 
 # Ignore all logfiles and tempfiles.
 /log/*
