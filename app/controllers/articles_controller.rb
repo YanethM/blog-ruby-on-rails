@@ -10,7 +10,11 @@ class ArticlesController < ApplicationController
   end
 
   def show
-    @article = Article.find(params[:id])
+    if user_signed_in?
+      @article = Article.find(params[:id])
+    else
+      @articles = Article.all
+    end
   end
 
   def new
@@ -45,8 +49,8 @@ class ArticlesController < ApplicationController
   def destroy
     @article = Article.find(params[:id])
     @article.destroy
-    flash[:success] = "Article deleted"
-    redirect_to request.referrer || root_url
+    flash[:success] = 'Article deleted'
+    redirect_to root_url, status: 303
   end
 
   private
