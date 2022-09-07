@@ -16,7 +16,8 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
-
+/node-modules
+/vendor
 # Ignore pidfiles, but keep the directory.
 /tmp/pids/*
 !/tmp/pids/
