@@ -1,0 +1,9 @@
+<h2><%= @user.name %> </h2>
+<div class="col-md-8">
+    <% if @user.articles.any? %>
+      <h3>Articulos (<%= @user.articles.count %>)</h3>
+      <ol class="articles">
+        
+      </ol>
+    <% end %>
+</div>

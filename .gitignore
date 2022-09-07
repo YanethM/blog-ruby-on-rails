@@ -16,14 +16,15 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
-
+/node-modules
+/vendor
 # Ignore pidfiles, but keep the directory.
 /tmp/pids/*
 !/tmp/pids/
 !/tmp/pids/.keep
 
 # Ignore uploaded files in development.
-/storage/*
+/strage/*
 !/storage/.keep
 /tmp/storage/*
 !/tmp/storage/
@@ -33,3 +34,9 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+/public/packs
+/public/packs-test
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity
