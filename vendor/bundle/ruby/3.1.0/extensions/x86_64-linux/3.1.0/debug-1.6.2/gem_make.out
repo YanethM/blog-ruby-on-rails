@@ -1,0 +1,16 @@
+current directory: /home/yaneth/Documentos/kommit/blog/vendor/bundle/ruby/3.1.0/gems/debug-1.6.2/ext/debug
+/home/yaneth/.rbenv/versions/3.1.2/bin/ruby -I /home/yaneth/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20220906-18002-ywds7d.rb extconf.rb
+creating Makefile
+
+current directory: /home/yaneth/Documentos/kommit/blog/vendor/bundle/ruby/3.1.0/gems/debug-1.6.2/ext/debug
+make DESTDIR\= clean
+
+current directory: /home/yaneth/Documentos/kommit/blog/vendor/bundle/ruby/3.1.0/gems/debug-1.6.2/ext/debug
+make DESTDIR\=
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: /home/yaneth/Documentos/kommit/blog/vendor/bundle/ruby/3.1.0/gems/debug-1.6.2/ext/debug
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 debug.so ./.gem.20220906-18002-1ekzbz/debug
